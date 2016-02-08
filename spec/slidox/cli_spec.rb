@@ -3,8 +3,12 @@ require 'spec_helper'
 describe Slidox::CLI do
   let(:project_name) { 'slidox1' }
 
+  before :each do
+    FileUtils::mkdir_p(File.join(ROOT, "tmp"))
+  end
+
   after :each do
-    remove_tmp_dir(project_name)
+    FileUtils.rm_rf(File.join(ROOT, "tmp"))
   end
 
   it "generates new slidox project" do
