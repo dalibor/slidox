@@ -1,4 +1,4 @@
-Copyright (c) 2014 Dalibor Nasevic
+Copyright (c) 2016 Dalibor Nasevic
 
 MIT License
 

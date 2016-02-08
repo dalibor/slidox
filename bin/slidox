@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+path = File.expand_path(File.dirname(__FILE__))
+$:<< "#{path}/../lib"
+
+require 'slidox'
+require 'slidox/cli'
+
+Slidox::CLI.start(ARGV, debug: true)

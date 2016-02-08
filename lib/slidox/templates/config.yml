@@ -1,0 +1,14 @@
+pdf:
+  disable_smart_shrinking: false
+  encoding:                'UTF-8'
+  margin_bottom:           '10mm'
+  margin_left:             '10mm'
+  margin_right:            '10mm'
+  margin_top:              '10mm'
+  orientation:             'Landscape'
+  page_size:               'Letter'
+  quiet:                   true
+
+target:
+  html: 'build/presentation.html'
+  pdf:  'build/presentation.pdf'
