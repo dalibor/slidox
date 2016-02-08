@@ -1,3 +1,5 @@
+![Travis status](https://travis-ci.org/dalibor/slidox.png)
+
 # Slidox
 
 Markdown to PDF and HTML conversion tool, useful for building presentations and other documents.
