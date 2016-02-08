@@ -68,7 +68,7 @@ module Slidox
     end
 
     def save_pdf(html)
-      PDFKit.new(html, pdf_config).to_file(pdf_target)
+      PDFKit.new(html, pdf_options).to_file(pdf_target)
     end
 
     def slides_path
@@ -79,7 +79,7 @@ module Slidox
       File.join(root_path, 'assets')
     end
 
-    def pdf_config
+    def pdf_options
       config['pdf']
     end
 

@@ -2,6 +2,13 @@
 
 Markdown to PDF and HTML conversion tool, useful for building presentations and other documents.
 
+## Dependencies
+
+```
+sudo apt-get install libicu-dev
+sudo apt-get install cmake
+```
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -24,7 +31,21 @@ $ gem install slidox
 
 ## Usage
 
-TODO: Write usage instructions here
+Generate new presentation
+
+```bash
+slidox new presentation
+```
+
+To build HTML and PDF for the presentation:
+
+```bash
+cd presentation
+slidox build
+```
+
+You can tweak `config.yml` for export options and change presentation styles with assets.
+
 
 ## Contributing
 
