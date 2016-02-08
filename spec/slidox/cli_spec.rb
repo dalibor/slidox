@@ -32,8 +32,8 @@ describe Slidox::CLI do
       end
 
       [
-        'build/presentation.html',
-        'build/presentation.pdf'
+        "build/#{project_name}.html",
+        "build/#{project_name}.pdf"
       ].each do |path|
         file = File.join(ROOT, "tmp/#{project_name}/#{path}")
         expect(File.exists?(file)).to be_truthy

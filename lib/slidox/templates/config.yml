@@ -10,5 +10,5 @@ pdf:
   quiet:                   true
 
 target:
-  html: 'build/presentation.html'
-  pdf:  'build/presentation.pdf'
+  html: 'build/<%= @name %>.html'
+  pdf:  'build/<%= @name %>.pdf'

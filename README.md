@@ -33,20 +33,20 @@ $ gem install slidox
 
 ## Usage
 
-Generate new presentation
+Generate new project
 
 ```bash
-slidox new presentation
+slidox new example
 ```
 
-To build HTML and PDF for the presentation:
+To build HTML and PDF from the project:
 
 ```bash
-cd presentation
+cd example
 slidox build
 ```
 
-You can tweak `config.yml` for export options and change presentation styles with assets.
+You can tweak `config.yml` for export options and change styles with custom assets.
 
 
 ## Contributing

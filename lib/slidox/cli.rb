@@ -12,13 +12,16 @@ module Slidox
     def new(name)
       source = self.class.source_root.to_s
       target = File.join(Dir.pwd, name)
-      files = Dir.glob("#{source}/**/*").
-        reject { |f| File.directory?(f) }.
-        map { |f| f.gsub("#{source}/", '') }
 
-      files.each do |file|
-        copy_file(file, File.join(target, file))
+      ['assets', 'slides'].each do |dir|
+        Dir.glob("#{source}/#{dir}/*").
+            map { |f| f.gsub("#{source}/", '') }.each do |file|
+          copy_file(file, File.join(target, file))
+        end
       end
+
+      @name = name
+      template('config.yml', File.join(target, 'config.yml'))
     end
 
     desc "build", "build slidox"
