@@ -18,7 +18,6 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec", "~> 3.0"
 
@@ -27,5 +26,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "pdfkit", "~> 0.8.2"
   spec.add_dependency "pygments.rb", "~> 0.6"
   spec.add_dependency "nokogiri", "~> 1.6"
-  spec.add_dependency "wkhtmltopdf-binary", "~> 0.9"
+  spec.add_dependency "wkhtmltopdf-binary", "0.12.3.1"
 end
